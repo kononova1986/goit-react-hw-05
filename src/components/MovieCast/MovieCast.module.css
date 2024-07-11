@@ -1,0 +1,15 @@
+.images {
+    width: 200px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    margin-left: 0;
+}
+.name {
+    width: 200px;
+    font-weight: 600;
+    color: black;
+}

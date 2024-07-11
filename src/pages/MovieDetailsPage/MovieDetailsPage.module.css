@@ -1,0 +1,26 @@
+.nav {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 2px solid orangered;
+}
+.link:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.active {
+    color: white;
+    background-color: orangered;
+}
+.wrap {
+    padding-bottom: 25px;
+}

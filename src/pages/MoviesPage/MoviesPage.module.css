@@ -1,0 +1,26 @@
+.input {
+    width: 300px;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    padding: 10px 16px;
+}
+.btn {
+    padding: 7px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 2px solid orangered;
+    margin: 0;
+    background-color: white;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: orangered;
+    color: white;
+}
+.form {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}

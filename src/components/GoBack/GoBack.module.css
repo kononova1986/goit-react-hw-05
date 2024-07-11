@@ -1,0 +1,22 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px 8px 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-weight: 500;
+    border: 2px solid orangered;
+    border-radius: 4px;
+}
+.linkBtn {
+    margin-bottom: 15px;
+}
+.link:hover {
+    background-color: orangered;
+}
+.link:hover,
+.icon:hover {
+    color: white;
+}

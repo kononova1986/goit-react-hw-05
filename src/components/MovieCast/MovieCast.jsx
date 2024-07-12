@@ -28,6 +28,10 @@ export default function MovieCast() {
     fetchMovieCast();
   }, [movieId]);
   console.log('🚀 ~ MovieCast ~ casts:', casts);
+
+  const defaultImg =
+    'https://dummyimage.com/400x600/cdcdcd/000.jpg&text=No+poster';
+
   return (
     <div>
       {loading && <Loader />}
@@ -40,11 +44,15 @@ export default function MovieCast() {
                 <li className={css.item} key={cast.id}>
                   <img
                     className={css.images}
-                    src={`https://image.tmdb.org/t/p/w500/${cast.profile_path}`}
+                    src={
+                      cast.profile_path
+                        ? `https://image.tmdb.org/t/p/w500/${cast.profile_path}`
+                        : defaultImg
+                    }
                     alt={cast.name}
                   />
                   <p className={css.name}>{cast.name}</p>
-                  <p>{cast.character}</p>
+                  <p style={{ width: '200px' }}>{cast.character}</p>
                 </li>
               ))}
           </ul>
